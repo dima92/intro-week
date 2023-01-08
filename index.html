@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tech Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="heading">Ваш прогресс</h2>
+      <div class="progress">
+        <div class="progress-bar">
+          <div class="progress-value"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="card">
+          <h3>HTML</h3>
+        </div>
+        <div class="card">
+          <h3>CSS</h3>
+        </div>
+        <div class="card">
+          <h3>JavaScript</h3>
+        </div>
+        <div class="card">
+          <h3>Git</h3>
+        </div>
+        <div class="card">
+          <h3>React</h3>
+        </div>
+      </div>
+
+      <form class="form">
+        <h2 class="heading">Добавить технологию</h2>
+        <div class="form-control">
+          <label for="title">Название</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            placeholder="Введите название"
+          />
+        </div>
+        <div class="form-control">
+          <label for="description">Описание</label>
+          <textarea
+            id="description"
+            name="description"
+            placeholder="Введите описание"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn">Создать</button>
+      </form>
+    </div>
+
+    <div class="modal">
+      <h2>JavaScript</h2>
+      <p>
+        Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+        вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
+        латинице с начала XVI века. В то время некий безымянный печатник создал
+        большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для
+        распечатки образцов. Lorem Ipsum не только успешно пережил без заметных
+        изменений пять веков, но и перешагнул в электронный дизайн. Его
+        популяризации в новое время послужили публикация листов Letraset с
+        образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы
+        электронной вёрстки типа Aldus PageMaker, в шаблонах которых
+        используется Lorem Ipsum.
+      </p>
+      <hr />
+      <div>
+        <input type="checkbox" id="done" />
+        <label for="done">Выучил</label>
+      </div>
+    </div>
+    <div class="modal-backdrop"></div>
+  </body>
+</html>
