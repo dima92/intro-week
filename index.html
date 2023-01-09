@@ -14,6 +14,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="http://cdn.onlinewebfonts.com/svg/img_509228.png"
+      type="image/x-icon"
+    />
     <title>Tech Tracker</title>
   </head>
   <body>
@@ -21,29 +26,13 @@
       <h2 class="heading">Ваш прогресс</h2>
       <div class="progress">
         <div class="progress-bar">
-          <div class="progress-value"></div>
+          <div class="progress-value" id="progress"></div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="card">
-          <h3>HTML</h3>
-        </div>
-        <div class="card">
-          <h3>CSS</h3>
-        </div>
-        <div class="card">
-          <h3>JavaScript</h3>
-        </div>
-        <div class="card">
-          <h3>Git</h3>
-        </div>
-        <div class="card">
-          <h3>React</h3>
-        </div>
-      </div>
+      <div class="row" id="content"></div>
 
-      <form class="form">
+      <form class="form" id="form">
         <h2 class="heading">Добавить технологию</h2>
         <div class="form-control">
           <label for="title">Название</label>
@@ -66,26 +55,9 @@
       </form>
     </div>
 
-    <div class="modal">
-      <h2>JavaScript</h2>
-      <p>
-        Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-        вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
-        латинице с начала XVI века. В то время некий безымянный печатник создал
-        большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для
-        распечатки образцов. Lorem Ipsum не только успешно пережил без заметных
-        изменений пять веков, но и перешагнул в электронный дизайн. Его
-        популяризации в новое время послужили публикация листов Letraset с
-        образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы
-        электронной вёрстки типа Aldus PageMaker, в шаблонах которых
-        используется Lorem Ipsum.
-      </p>
-      <hr />
-      <div>
-        <input type="checkbox" id="done" />
-        <label for="done">Выучил</label>
-      </div>
-    </div>
-    <div class="modal-backdrop"></div>
+    <div class="modal" id="modal"></div>
+    <div class="modal-backdrop" id="backdrop"></div>
+
+    <script src="app.js"></script>
   </body>
 </html>
